@@ -3,7 +3,7 @@
 API.on(API.CHAT_COMMAND, command); 
 function command(value) {
 
-	if(value.indexOf("/uid @") >=0)
+	if(value.indexOf("/ver @") >=0)
 	{
 		userIdCommand(value);
 	}
@@ -19,8 +19,8 @@ function command(value) {
 	   		var listenerPoints = API.getUser(id).listenerPoints;
 	   		var fans = API.getUser(id).fans;
 	   		var curatorPoints = API.getUser(id).curatorPoints;
-			API.chatLog("UID for " + name + " is: " + id);
-			API.chatLog("User @" + name + " statistics: djPoints: " + points + " | listenerPoints: " + listenerPoints + " | fans: " + fans + " | grabPoints: " + curatorPoints);
+			API.chatLog(" O Id do usuario " + name + " é : " + id);
+			API.chatLog("Usuario @" + name + "  Pontos Tocando: " + points + " / Pontos Avaliando: " + listenerPoints + " / Fans: " + fans + " / Pontos de Grab: " + curatorPoints);
 		}
 	}
 
